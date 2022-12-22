@@ -1,5 +1,5 @@
 # kkawailab.github.io
 
-近日中にリブートします。
+メンバー一覧を作成しました。
 
 https://kklab.mobi/
