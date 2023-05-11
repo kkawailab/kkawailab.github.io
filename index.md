@@ -12,7 +12,7 @@
 - [Katsuhiko](https://kklab.mobi/katsuhiko/)
 - [Katz](https://kklab.mobi/katz/)
 
-## Class 2022
+## Class of 2022
 
 - [Kiyugo](https://kklab.mobi/kiyugo/)
 - [Kazuya](https://kklab.mobi/kazuya/)
