@@ -1,7 +1,9 @@
 # KKLab Blog
 
-- [Team 21](https://kklab.mobi/blogTeam21/)
-- [Team 22](https://kklab.mobi/blogTeam22/)
+<!-- - [Team 21](https://kklab.mobi/blogTeam21/) -->
+<!-- - [Team 22](https://kklab.mobi/blogTeam22/) -->
+
+- [Team 22](https://kklab.mobi/blogTeam2023/)
 
 # KKLab Member
 
@@ -10,7 +12,7 @@
 - [Katsuhiko](https://kklab.mobi/katsuhiko/)
 - [Katz](https://kklab.mobi/katz/)
 
-## Senior
+## 2022 Class of OB/OG
 
 - [Kiyugo](https://kklab.mobi/kiyugo/)
 - [Kazuya](https://kklab.mobi/kazuya/)
@@ -23,7 +25,7 @@
 - [Keita](https://kklab.mobi/keita/)
 - [Noriko](https://kklab.mobi/noriko/)
 
-## Junior
+## Senior
 
 - [Eisuke](https://kklab.mobi/eisuke/)
 - [Sara](https://kklab.mobi/sara/)
@@ -36,4 +38,6 @@
 - [Mutsumi](https://kklab.mobi/mutsumi/)
 - [Ryuki](https://kklab.mobi/ryuki/)
 
-Last Updated:2022/12/16
+## Junior
+
+Last Updated: 2023-05-12
