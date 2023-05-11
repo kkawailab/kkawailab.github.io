@@ -12,7 +12,7 @@
 - [Katsuhiko](https://kklab.mobi/katsuhiko/)
 - [Katz](https://kklab.mobi/katz/)
 
-## 2022 Class of OB/OG
+## Class 2022
 
 - [Kiyugo](https://kklab.mobi/kiyugo/)
 - [Kazuya](https://kklab.mobi/kazuya/)
