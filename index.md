@@ -3,7 +3,7 @@
 <!-- - [Team 21](https://kklab.mobi/blogTeam21/) -->
 <!-- - [Team 22](https://kklab.mobi/blogTeam22/) -->
 
-- [Team 2023](https://kklab.mobi/blog/)
+- [Team 2023](https://kklab.mobi/teamblog/)
 
 # KKLab Member
 
