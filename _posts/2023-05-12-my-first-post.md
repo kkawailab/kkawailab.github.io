@@ -5,6 +5,7 @@ title:  "Welcome to KKLab!"
 
 # Welcome
 
-**Hello world**, this is my first blog post.
+**ハローワールド**
 
-I hope you like it!
+はじめての記事を投稿します。チームで活用したいものです。
+
