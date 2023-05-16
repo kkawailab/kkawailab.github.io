@@ -11,4 +11,6 @@ title:  "Welcome to KKLab!"
 **ハローワールド**
 
 はじめての記事を投稿します。チームで活用したいものです。
+
+![山の画像](/imgs/mountain.png)
 ```
