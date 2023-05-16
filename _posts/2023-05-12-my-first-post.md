@@ -9,3 +9,5 @@ title:  "Welcome to KKLab!"
 
 はじめての記事を投稿します。チームで活用したいものです。
 
+![山の画像](/imgs/mountain.png)
+
