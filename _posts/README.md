@@ -1,5 +1,11 @@
 以下のようなテンプレートを使います。
 
+ファイルの名前は、
+
+```
+YEAR-MONTH-DAY-名前のイニシャル等.md
+```
+
 ``` markdown
 ---
 layout: post
