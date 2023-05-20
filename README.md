@@ -4,5 +4,6 @@
 
 ドメインマッピングの調整中です。リダイレクトがうまくいかないかもしれません。
 
+https://kklab.nagoya 
 
 https://kklab.mobi/
