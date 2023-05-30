@@ -4,6 +4,7 @@
 <!-- - [Team 22](https://kklab.mobi/blogTeam22/) -->
 
 - [Team 2023](https://kklab.mobi/teamblog/)
+- [投稿用のレポジトリ](https://github.com/kkawailab/kkawailab.github.io/tree/main/_posts)
 
 # KKLab Member
 
