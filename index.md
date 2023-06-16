@@ -13,19 +13,6 @@
 - [Katsuhiko](https://kklab.mobi/katsuhiko/)
 - [Katz](https://kklab.mobi/katz/)
 
-## Class of 2022
-
-- [Kiyugo](https://kklab.mobi/kiyugo/)
-- [Kazuya](https://kklab.mobi/kazuya/)
-- [Shiyohgo](https://kklab.mobi/shiyohgo/)
-- [Yoshiki](https://kklab.mobi/yoshiki/)
-- [Shiyun](https://kklab.mobi/shiyun/)
-- [Kasuga](https://kklab.mobi/kasuga/)
-- [Kazuma](https://kklab.mobi/kazuma/)
-- [Sakura](https://kklab.mobi/sakura/)
-- [Keita](https://kklab.mobi/keita/)
-- [Noriko](https://kklab.mobi/noriko/)
-
 ## Senior
 
 - [Eisuke](https://kklab.mobi/eisuke/)
@@ -52,4 +39,17 @@
 - [riyuki](https://kklab.mobi/riyuki/)
 - [okota](https://kklab.mobi/okota/)
 
-Last Updated: 2023-05-24
+## Class of 2022
+
+- [Kiyugo](https://kklab.mobi/kiyugo/)
+- [Kazuya](https://kklab.mobi/kazuya/)
+- [Shiyohgo](https://kklab.mobi/shiyohgo/)
+- [Yoshiki](https://kklab.mobi/yoshiki/)
+- [Shiyun](https://kklab.mobi/shiyun/)
+- [Kasuga](https://kklab.mobi/kasuga/)
+- [Kazuma](https://kklab.mobi/kazuma/)
+- [Sakura](https://kklab.mobi/sakura/)
+- [Keita](https://kklab.mobi/keita/)
+- [Noriko](https://kklab.mobi/noriko/)
+
+Last Updated: 2023-06-16
