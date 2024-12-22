@@ -15,17 +15,6 @@
 
 ## Senior
 
-<!-- - [Eisuke](https://kklab.mobi/eisuke/)
-- [Sara](https://kklab.mobi/sara/)
-- [Tatsuki](https://kklab.mobi/tatsuki/)
-- [Ryoto](https://kklab.mobi/ryoto/)
-- [Rikuto](https://kklab.mobi/rikuto/)
-- [Yuta](https://kklab.mobi/yuta/)
-- [Reki](https://kklab.mobi/reki/)
-- [Kyosuke](https://kklab.mobi/kyosuke/)
-- [Mutsumi](https://kklab.mobi/mutsumi/)
-- [Ryuki](https://kklab.mobi/ryuki/) -->
-
 - [hideaki](https://kklab.mobi/hideaki/)
 - [yuki](https://kklab.mobi/yuki/)
 - [kyuta](https://kklab.mobi/kyuta/)
