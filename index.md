@@ -28,13 +28,14 @@
 ## Junior
 
 - [akubota](https://kklab.mobi/akubota/)
-- [dyamaguchi](https://kklab.mobi/dyamaguchi/)
 - [hkumazawa](https://kklab.mobi/hkumazawa/)
 - [komatsu](https://kklab.mobi/komatsu/)
 - [mkawasaki](https://kklab.mobi/mkawasaki/)
+- [mkinoshita](https://kklab.mobi/mkisnoshita/)
 - [mmiwa](https://kklab.mobi/mmiwa/)
 - [ruehara](https://kklab.mobi/ruehara/)
 - [tobata](https://kklab.mobi/tobata)
 - [ymatsumura](https://kklab.mobi/ymatsumura/)
+- [dyamaguchi](https://kklab.mobi/dyamaguchi/)
 
 Last Updated: 2024-12-22
