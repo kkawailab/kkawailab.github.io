@@ -1,4 +1,3 @@
-# KKLab Blog
 
 <!-- - [Team 21](https://kklab.mobi/blogTeam21/) -->
 <!-- - [Team 22](https://kklab.mobi/blogTeam22/) -->
