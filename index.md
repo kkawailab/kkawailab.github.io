@@ -3,8 +3,8 @@
 <!-- - [Team 21](https://kklab.mobi/blogTeam21/) -->
 <!-- - [Team 22](https://kklab.mobi/blogTeam22/) -->
 
-- [Team 2023](https://kklab.mobi/teamblog/)
-- [投稿用のレポジトリ](https://github.com/kkawailab/kkawailab.github.io/tree/main/_posts)
+<!-- - [Team 2023](https://kklab.mobi/teamblog/)
+- [投稿用のレポジトリ](https://github.com/kkawailab/kkawailab.github.io/tree/main/_posts) -->
 
 # KKLab Member
 
@@ -15,7 +15,7 @@
 
 ## Senior
 
-- [Eisuke](https://kklab.mobi/eisuke/)
+<!-- - [Eisuke](https://kklab.mobi/eisuke/)
 - [Sara](https://kklab.mobi/sara/)
 - [Tatsuki](https://kklab.mobi/tatsuki/)
 - [Ryoto](https://kklab.mobi/ryoto/)
@@ -24,10 +24,11 @@
 - [Reki](https://kklab.mobi/reki/)
 - [Kyosuke](https://kklab.mobi/kyosuke/)
 - [Mutsumi](https://kklab.mobi/mutsumi/)
-- [Ryuki](https://kklab.mobi/ryuki/)
+- [Ryuki](https://kklab.mobi/ryuki/) -->
 
 ## Junior
 
+<!--
 - [hideaki](https://kklab.mobi/hideaki/)
 - [yuki](https://kklab.mobi/yuki/)
 - [kyuta](https://kklab.mobi/kyuta/)
@@ -37,9 +38,9 @@
 - [keisuke](https://kklab.mobi/keisuke/)
 - [hkota](https://kklab.mobi/hkota)
 - [riyuki](https://kklab.mobi/riyuki/)
-- [okota](https://kklab.mobi/okota/)
+- [okota](https://kklab.mobi/okota/) -->
 
-## Class of 2022
+<!-- ## Class of 2022
 
 - [Kiyugo](https://kklab.mobi/kiyugo/)
 - [Kazuya](https://kklab.mobi/kazuya/)
@@ -50,6 +51,6 @@
 - [Kazuma](https://kklab.mobi/kazuma/)
 - [Sakura](https://kklab.mobi/sakura/)
 - [Keita](https://kklab.mobi/keita/)
-- [Noriko](https://kklab.mobi/noriko/)
+- [Noriko](https://kklab.mobi/noriko/) -->
 
-Last Updated: 2023-06-16
+Last Updated: 2024-12-22
