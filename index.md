@@ -26,6 +26,17 @@
 - [Mutsumi](https://kklab.mobi/mutsumi/)
 - [Ryuki](https://kklab.mobi/ryuki/) -->
 
+- [hideaki](https://kklab.mobi/hideaki/)
+- [yuki](https://kklab.mobi/yuki/)
+- [kyuta](https://kklab.mobi/kyuta/)
+- [ayane](https://kklab.mobi/ayane/)
+- [hitoshi](https://kklab.mobi/hitoshi/)
+- [hirotaka](https://kklab.mobi/hirotaka/)
+- [keisuke](https://kklab.mobi/keisuke/)
+- [hkota](https://kklab.mobi/hkota)
+- [riyuki](https://kklab.mobi/riyuki/)
+- [okota](https://kklab.mobi/okota/) 
+
 ## Junior
 
 <!--
