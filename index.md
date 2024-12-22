@@ -38,17 +38,4 @@
 - [tobata](https://kklab.mobi/tobata)
 - [ymatsumura](https://kklab.mobi/ymatsumura/)
 
-<!-- ## Class of 2022
-
-- [Kiyugo](https://kklab.mobi/kiyugo/)
-- [Kazuya](https://kklab.mobi/kazuya/)
-- [Shiyohgo](https://kklab.mobi/shiyohgo/)
-- [Yoshiki](https://kklab.mobi/yoshiki/)
-- [Shiyun](https://kklab.mobi/shiyun/)
-- [Kasuga](https://kklab.mobi/kasuga/)
-- [Kazuma](https://kklab.mobi/kazuma/)
-- [Sakura](https://kklab.mobi/sakura/)
-- [Keita](https://kklab.mobi/keita/)
-- [Noriko](https://kklab.mobi/noriko/) -->
-
 Last Updated: 2024-12-22
