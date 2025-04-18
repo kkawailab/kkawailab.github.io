@@ -12,6 +12,10 @@ permalink: /
   </div>
 </div>
 
+<div class="card" style="background-color: #fff3cd; border-left: 5px solid #ffc107;">
+  <p style="color: #856404;"><strong>注意:</strong> このサイトは現在作成中です。掲載されている情報はダミーデータであり、実際の内容とは異なる場合があります。</p>
+</div>
+
 ## ゼミの紹介
 
 KKLabは、革新的な研究と教育を通じて次世代のリーダーを育成することを目指しています。最先端の技術と理論を学び、実践的なプロジェクトに取り組むことで、実社会で活躍できる人材を育てます。
