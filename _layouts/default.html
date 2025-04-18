@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header>
+    <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+    <nav>
+      <ul>
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li><a href="{{ '/about.html' | relative_url }}">ゼミ紹介</a></li>
+        <li><a href="{{ '/members.html' | relative_url }}">メンバー</a></li>
+        <li><a href="{{ '/schedule.html' | relative_url }}">スケジュール</a></li>
+        <li><a href="{{ '/research.html' | relative_url }}">研究テーマ</a></li>
+        <li><a href="{{ '/collaboration.html' | relative_url }}">産学連携</a></li>
+        <li><a href="{{ '/teamblog/' | relative_url }}">ブログ</a></li>
+        <li><a href="{{ '/contact.html' | relative_url }}">コンタクト</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    {{ content }}
+  </main>
+  <footer>
+    <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
+  </footer>
+</body>
+</html>
