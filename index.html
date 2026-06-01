@@ -3,391 +3,120 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>KKLab ゼミサイト</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-
-    :root {
-      --primary-color: #6366f1;
-      --secondary-color: #4f46e5;
-      --accent1-color: #ec4899;
-      --accent2-color: #14b8a6;
-      --accent3-color: #f97316;
-      --text-color: #1e293b;
-      --light-text: #f8fafc;
-      --light-bg: #f8fafc;
-      --medium-gray: #e2e8f0;
-      --gradient1: linear-gradient(120deg, #6366f1, #ec4899);
-      --gradient2: linear-gradient(120deg, #6366f1, #14b8a6);
-      --border-radius: 12px;
-      --border-radius-lg: 20px;
-      --box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
-      --box-shadow-hover: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      line-height: 1.7;
-      color: var(--text-color);
-      background-color: var(--light-bg);
-      letter-spacing: 0.01em;
-    }
-
-    body::before {
-      content: '';
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background:
-        radial-gradient(circle at 10% 10%, rgba(99, 102, 241, 0.05) 0%, transparent 30%),
-        radial-gradient(circle at 90% 30%, rgba(236, 72, 153, 0.05) 0%, transparent 30%),
-        radial-gradient(circle at 30% 80%, rgba(20, 184, 166, 0.05) 0%, transparent 30%),
-        radial-gradient(circle at 80% 90%, rgba(249, 115, 22, 0.05) 0%, transparent 30%);
-      z-index: -1;
-    }
-
-    header {
-      background: var(--gradient1);
-      padding: 2rem 0;
-      color: white;
-      box-shadow: var(--box-shadow);
-      position: relative;
-      overflow: hidden;
-    }
-
-    header::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 300px;
-      height: 300px;
-      background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%);
-      border-radius: 50%;
-      transform: translate(30%, -30%);
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 2rem;
-      position: relative;
-      z-index: 1;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    .tagline {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-      opacity: 0.95;
-    }
-
-    main {
-      padding: 3rem 0;
-    }
-
-    section {
-      margin-bottom: 4rem;
-    }
-
-    h2 {
-      color: var(--primary-color);
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-      font-weight: 600;
-      position: relative;
-      padding-left: 1rem;
-    }
-
-    h2::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      width: 4px;
-      background: var(--gradient2);
-      border-radius: 2px;
-    }
-
-    h3 {
-      color: var(--accent3-color);
-      font-size: 1.5rem;
-      margin-top: 1.5rem;
-      margin-bottom: 1rem;
-      font-weight: 600;
-    }
-
-    p {
-      margin-bottom: 1.2rem;
-      font-size: 1.05rem;
-    }
-
-    .card {
-      background-color: white;
-      border-radius: var(--border-radius-lg);
-      padding: 2rem;
-      margin-bottom: 2rem;
-      box-shadow: var(--box-shadow);
-      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      border: 1px solid rgba(0, 0, 0, 0.05);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 5px;
-      background: var(--gradient1);
-    }
-
-    .card:nth-of-type(2n)::before {
-      background: var(--gradient2);
-    }
-
-    .card:nth-of-type(3n)::before {
-      background: linear-gradient(120deg, var(--accent3-color), var(--accent2-color));
-    }
-
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: var(--box-shadow-hover);
-    }
-
-    .card h3 {
-      margin-top: 0;
-      color: var(--primary-color);
-    }
-
-    .card:nth-of-type(2n) h3 {
-      color: var(--accent2-color);
-    }
-
-    .card:nth-of-type(3n) h3 {
-      color: var(--accent3-color);
-    }
-
-    ul {
-      margin-left: 1.5rem;
-      margin-bottom: 1.5rem;
-    }
-
-    li {
-      margin-bottom: 0.7rem;
-    }
-
-    strong {
-      color: var(--accent1-color);
-      font-weight: 600;
-    }
-
-    .notice {
-      background-color: #fff3cd;
-      border-left: 5px solid #ffc107;
-      padding: 1.2rem;
-      margin-bottom: 2rem;
-      border-radius: var(--border-radius);
-      box-shadow: var(--box-shadow);
-    }
-
-    .notice p {
-      color: #856404;
-      margin: 0;
-    }
-
-    footer {
-      text-align: center;
-      padding: 3rem 0;
-      background: var(--gradient1);
-      color: white;
-      font-size: 0.95rem;
-      position: relative;
-      overflow: hidden;
-    }
-
-    footer::before {
-      content: '';
-      position: absolute;
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-      top: -100px;
-      right: -50px;
-    }
-
-    @media (max-width: 768px) {
-      .container {
-        padding: 0 1.5rem;
-      }
-
-      h1 {
-        font-size: 2rem;
-      }
-
-      h2 {
-        font-size: 1.5rem;
-      }
-
-      .card {
-        padding: 1.5rem;
-      }
-    }
-  </style>
+  <title>河合勝彦研究室 (KKLab) — 名古屋市立大学</title>
+  <meta name="description" content="名古屋市立大学 河合勝彦研究室 (KKLab)。「経営とITの融合」をテーマに、情報技術・経済学・経営学を統合した学際的研究に取り組んでいます。">
+  <!-- OGP -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="河合勝彦研究室 (KKLab) — 名古屋市立大学">
+  <meta property="og:description" content="経営とITの融合。情報技術・経済学・経営学を統合した学際的研究。">
+  <meta property="og:url" content="https://kklab.mobi/">
+  <meta property="og:site_name" content="河合勝彦研究室 (KKLab)">
+  <meta property="og:image" content="https://kklab.mobi/imgs/mountain.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;600&display=swap">
+  <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>KKLab ゼミサイト</h1>
-      <p class="tagline">革新的な研究と学びの共同体</p>
+  <a class="skip" href="#main">本文へスキップ</a>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="/index.html">
+        <span class="brand-name">河合勝彦研究室</span>
+        <span class="brand-sub">名古屋市立大学 KKLab</span>
+      </a>
+      <nav class="site-nav" aria-label="メインナビゲーション">
+        <a href="/index.html" class="current" aria-current="page">研究室紹介</a>
+        <a href="/members.html">メンバー紹介</a>
+        <a href="/works.html">研究成果</a>
+      </nav>
     </div>
   </header>
 
-  <main class="container">
-    <div class="notice">
-      <p><strong>注意:</strong> このサイトは現在作成中です。掲載されている情報はダミーデータであり、実際の内容とは異なる場合があります。</p>
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow">NAGOYA CITY UNIVERSITY ・ KKLab</p>
+      <h1>河合勝彦研究室</h1>
+      <p class="lead">コンピュータで組織や社会を分析し、よりよい制度や仕組みを社会へ実装する。情報技術・経済学・経営学を統合した、学際的な研究に取り組んでいます。</p>
     </div>
+  </section>
 
-    <section id="about">
-      <h2>ゼミの紹介</h2>
-      <p>KKLabは、革新的な研究と教育を通じて次世代のリーダーを育成することを目指しています。最先端の技術と理論を学び、実践的なプロジェクトに取り組むことで、実社会で活躍できる人材を育てます。</p>
-
-      <p>KKLabは、<strong>「経営とITの融合」</strong>を理念に掲げ、経営情報システムの可能性を追求するゼミです。ビジネスインテリジェンス、データ分析、情報システム評価を中心に、革新的な研究と実践的な学びを通じて、社会に貢献できる人材の育成を目指しています。</p>
+  <main id="main" class="container">
+    <section id="about" aria-labelledby="about-h">
+      <h2 id="about-h">研究室について</h2>
+      <p class="lead-text">本研究室は <strong>「経営とITの融合」</strong> を理念に掲げ、経営情報システムの可能性を追求しています。ビジネスインテリジェンス、データ分析、情報システム評価を中心に、革新的な研究と実践的な学びを通じて、社会に貢献できる人材の育成を目指します。</p>
+      <p>「コンピュータで組織や社会を分析し、よりよい制度や仕組みを社会実装する」——この目標のもと、情報技術・経済学・経営学の境界を越えた学際的なアプローチで研究を進めています。</p>
     </section>
 
-    <section id="members">
-      <h2>メンバー</h2>
-      <div class="card">
-        <p>KKLabのメンバー紹介はこちらをご覧ください。</p>
-        <p><a href="members.html">メンバー一覧</a></p>
+    <section id="research" aria-labelledby="research-h">
+      <h2 id="research-h">研究テーマ</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>ITと経済・経営</h3>
+          <ul>
+            <li>情報ネットワークが社会へもたらす影響</li>
+            <li>モジュール化と経営・生産システムの関係性</li>
+            <li>フリー・オープンソースソフトウェアの経済分析</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>計算社会科学</h3>
+          <ul>
+            <li>エージェントベースモデルによる市場シミュレーション</li>
+            <li>社会ネットワーク分析の応用</li>
+            <li>データビジュアライゼーション</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>経営情報システム</h3>
+          <ul>
+            <li>ソーシャルメディアの企業活用（Enterprise 2.0）</li>
+            <li>システムダイナミックス</li>
+            <li>デザイン思考とソーシャルイノベーション</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>最近の重点テーマ</h3>
+          <ul>
+            <li>MaaS（モビリティ・アズ・ア・サービス）</li>
+            <li>フィンテックと暗号資産</li>
+            <li>ブロックチェーン応用</li>
+            <li>スマートシティ研究</li>
+          </ul>
+        </div>
       </div>
+      <p style="margin-top: var(--space-3);"><strong>研究手法：</strong>シミュレーション、データ分析、フィールドワーク、プログラミング（JavaScript・Python・R）、予測市場の実践的活用など、定量的・実践的な手法を組み合わせています。研究の成果は <a href="/works.html">研究成果</a> のページで公開しています。</p>
     </section>
 
-    <section id="research">
-      <h2>研究活動</h2>
-      <p>コンピュータで組織や社会を分析し、よりよい制度や仕組みを社会実装することを目標に、情報技術、経済学、経営学を統合した学際的な研究を行っています。</p>
-
-      <div class="card">
-        <h3>ITと経済・経営</h3>
-        <ul>
-          <li>情報ネットワークが社会へもたらす影響</li>
-          <li>モジュール化と経営・生産システムの関係性</li>
-          <li>フリー・オープンソースソフトウェアの経済分析</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Computational Social Science</h3>
-        <ul>
-          <li>エージェントベースモデルによる市場シミュレーション</li>
-          <li>社会ネットワーク分析の応用</li>
-          <li>データビジュアライゼーション</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>経営情報システム</h3>
-        <ul>
-          <li>ソーシャルメディアの企業活用（Enterprise 2.0）</li>
-          <li>システムダイナミックス</li>
-          <li>デザイン思考とソーシャルイノベーション</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>最近の重点テーマ</h3>
-        <ul>
-          <li>MaaS（モビリティ・アズ・ア・サービス）</li>
-          <li>フィンテックと暗号資産</li>
-          <li>ブロックチェーン応用</li>
-          <li>スマートシティ研究</li>
-        </ul>
-      </div>
-
-      <p style="margin-top: 2rem;">研究手法: シミュレーション、データ分析、フィールドワーク、プログラミング（JavaScript、Python、R）、予測市場の実践的活用など、定量的・実践的手法を組み合わせています。</p>
-      <p>詳しくは <a href="https://www.kklab.info" target="_blank" rel="noopener noreferrer">研究室公式サイト</a> をご覧ください。</p>
-    </section>
-
-    <section id="activities">
-      <h2>ゼミ活動</h2>
-      <div class="card">
-        <h3>週次ゼミ活動</h3>
-        <ul>
-          <li><strong>講義</strong> - 基礎から応用まで、教員による専門的な講義を実施</li>
-          <li><strong>輪読会</strong> - 最新の論文や書籍を共に読み、議論する輪読会</li>
-          <li><strong>研究発表</strong> - 各自の研究進捗を定期的に発表し、フィードバックを得る機会</li>
-          <li><strong>ハッカソン</strong> - 実践的なスキルを磨くための短期集中型プロジェクト</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>教育方針</h3>
-        <ul>
-          <li><strong>自主性の尊重</strong> - 学生自身が関心を持ち、主体的に取り組める研究テーマを尊重します</li>
-          <li><strong>実践的な学び</strong> - 理論だけでなく、実装や評価まで一貫して取り組む姿勢を重視します</li>
-          <li><strong>協働の精神</strong> - チームワークを通じて、多様な視点から問題解決に取り組む力を養います</li>
-          <li><strong>批判的思考</strong> - 既存の技術や理論に対する批判的な視点を持ち、改善点を見出す力を育みます</li>
-          <li><strong>社会への視点</strong> - 技術の社会的影響を考慮し、責任ある研究者・エンジニアを育成します</li>
-        </ul>
+    <section id="message" aria-labelledby="message-h">
+      <h2 id="message-h">所属学生のみなさんへ</h2>
+      <div class="message">
+        <h3>自ら問いを立て、手を動かす</h3>
+        <p>この研究室では、みなさん一人ひとりの「なぜ」を何より大切にしています。自ら問いを立て、コンピュータと向き合いながら理論を実装し、その結果を社会の文脈で問い直す——その一連の探究を、仲間とともに楽しんでほしいと願っています。</p>
+        <p>失敗を恐れずに手を動かし、互いの視点から学び合うなかで、技術が人や社会に与える意味まで考えられる研究者・実務者へと成長していきましょう。理論だけでなく実装や評価まで一貫してやり抜く姿勢、そして多様な視点で問題に挑むチームワークを重んじます。みなさんの主体的な挑戦を、全力で支えます。</p>
       </div>
     </section>
 
-    <section id="news">
-      <h2>最新のお知らせ</h2>
-      <div class="card">
-        <ul>
-          <li><strong>2025年4月</strong> - 新学期が始まりました。新しいメンバーを歓迎します！</li>
-          <li><strong>2025年3月</strong> - 卒業研究発表会が無事終了しました。発表した全ての学生の皆さん、お疲れ様でした。</li>
-          <li><strong>2025年2月</strong> - 企業との共同研究プロジェクトが開始されました。</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="blog">
-      <h2>ブログ</h2>
-      <div class="card">
-        <p>研究に関するアイデアや考察は、外部ブログで公開しています。</p>
-        <p><a href="https://ideamarkets.info/" target="_blank" rel="noopener noreferrer">Idea Markets - 研究ブログ</a></p>
-      </div>
-    </section>
-
-    <section id="repositories">
-      <h2>公開リポジトリ</h2>
-      <div class="card">
-        <p>KKLabの研究プロジェクトやコードは、GitHubで公開しています。</p>
-        <p><a href="https://github.com/orgs/kkawailab/repositories" target="_blank" rel="noopener noreferrer">河合勝彦研究室 公開リポジトリ一覧</a></p>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2>コンタクト</h2>
-      <div class="card">
-        <p>ゼミへのお問い合わせや見学希望、共同研究のご相談など、お気軽にご連絡ください。</p>
-        <p>最新のコンピュータ設備と研究リソースを備えた専用の研究室で、快適な研究環境を提供しています。また、オンラインツールを活用したリモートでの研究活動も積極的に支援しています。</p>
-      </div>
+    <section id="links" aria-labelledby="links-h">
+      <h2 id="links-h">関連リンク</h2>
+      <ul class="inline-links">
+        <li><a href="https://www.kklab.info" target="_blank" rel="noopener noreferrer">研究室公式サイト（kklab.info）</a></li>
+        <li><a href="https://ideamarkets.info/" target="_blank" rel="noopener noreferrer">研究ブログ（Idea Markets）</a></li>
+        <li><a href="https://github.com/orgs/kkawailab/repositories" target="_blank" rel="noopener noreferrer">GitHub（kkawailab）</a></li>
+      </ul>
     </section>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2025 KKLab ゼミ</p>
+      <nav class="footer-links" aria-label="関連リンク">
+        <a href="https://www.kklab.info" target="_blank" rel="noopener noreferrer">研究室公式サイト</a>
+        <a href="https://ideamarkets.info/" target="_blank" rel="noopener noreferrer">研究ブログ</a>
+        <a href="https://github.com/orgs/kkawailab/repositories" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
+      <p class="copyright">&copy; 2026 名古屋市立大学 河合勝彦研究室 (KKLab)</p>
     </div>
   </footer>
 </body>

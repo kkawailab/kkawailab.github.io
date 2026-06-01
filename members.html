@@ -3,295 +3,118 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>メンバー - KKLab ゼミサイト</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-
-    :root {
-      --primary-color: #6366f1;
-      --secondary-color: #4f46e5;
-      --accent1-color: #ec4899;
-      --accent2-color: #14b8a6;
-      --accent3-color: #f97316;
-      --text-color: #1e293b;
-      --light-text: #f8fafc;
-      --light-bg: #f8fafc;
-      --medium-gray: #e2e8f0;
-      --gradient1: linear-gradient(120deg, #6366f1, #ec4899);
-      --gradient2: linear-gradient(120deg, #6366f1, #14b8a6);
-      --border-radius: 12px;
-      --border-radius-lg: 20px;
-      --box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
-      --box-shadow-hover: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      line-height: 1.7;
-      color: var(--text-color);
-      background-color: var(--light-bg);
-      letter-spacing: 0.01em;
-    }
-
-    body::before {
-      content: '';
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background:
-        radial-gradient(circle at 10% 10%, rgba(99, 102, 241, 0.05) 0%, transparent 30%),
-        radial-gradient(circle at 90% 30%, rgba(236, 72, 153, 0.05) 0%, transparent 30%),
-        radial-gradient(circle at 30% 80%, rgba(20, 184, 166, 0.05) 0%, transparent 30%),
-        radial-gradient(circle at 80% 90%, rgba(249, 115, 22, 0.05) 0%, transparent 30%);
-      z-index: -1;
-    }
-
-    header {
-      background: var(--gradient1);
-      padding: 2rem 0;
-      color: white;
-      box-shadow: var(--box-shadow);
-      position: relative;
-      overflow: hidden;
-    }
-
-    header::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 300px;
-      height: 300px;
-      background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%);
-      border-radius: 50%;
-      transform: translate(30%, -30%);
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 2rem;
-      position: relative;
-      z-index: 1;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    .tagline {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-      opacity: 0.95;
-    }
-
-    nav {
-      margin-top: 1rem;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-right: 1rem;
-      opacity: 0.9;
-      transition: opacity 0.3s;
-    }
-
-    nav a:hover {
-      opacity: 1;
-      text-decoration: underline;
-    }
-
-    main {
-      padding: 3rem 0;
-    }
-
-    section {
-      margin-bottom: 3rem;
-    }
-
-    h2 {
-      color: var(--primary-color);
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-      font-weight: 600;
-      position: relative;
-      padding-left: 1rem;
-    }
-
-    h2::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      width: 4px;
-      background: var(--gradient2);
-      border-radius: 2px;
-    }
-
-    .member-list {
-      background-color: white;
-      border-radius: var(--border-radius-lg);
-      padding: 2rem;
-      box-shadow: var(--box-shadow);
-      border-top: 5px solid var(--primary-color);
-    }
-
-    .member-list ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    .member-list li {
-      padding: 0.8rem 0;
-      border-bottom: 1px solid var(--medium-gray);
-    }
-
-    .member-list li:last-child {
-      border-bottom: none;
-    }
-
-    .member-list a {
-      color: var(--primary-color);
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-
-    .member-list a:hover {
-      color: var(--accent1-color);
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      padding: 3rem 0;
-      background: var(--gradient1);
-      color: white;
-      font-size: 0.95rem;
-      position: relative;
-      overflow: hidden;
-    }
-
-    footer::before {
-      content: '';
-      position: absolute;
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-      top: -100px;
-      right: -50px;
-    }
-
-    @media (max-width: 768px) {
-      .container {
-        padding: 0 1.5rem;
-      }
-
-      h1 {
-        font-size: 2rem;
-      }
-
-      h2 {
-        font-size: 1.5rem;
-      }
-
-      .member-list {
-        padding: 1.5rem;
-      }
-    }
-  </style>
+  <title>メンバー紹介 — 河合勝彦研究室 (KKLab)</title>
+  <meta name="description" content="名古屋市立大学 河合勝彦研究室 (KKLab) のメンバー紹介。教員および所属学生の一覧。">
+  <!-- OGP -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="メンバー紹介 — 河合勝彦研究室 (KKLab)">
+  <meta property="og:description" content="名古屋市立大学 河合勝彦研究室のメンバー紹介。">
+  <meta property="og:url" content="https://kklab.mobi/members.html">
+  <meta property="og:site_name" content="河合勝彦研究室 (KKLab)">
+  <meta name="twitter:card" content="summary">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;600&display=swap">
+  <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>KKLab ゼミサイト</h1>
-      <p class="tagline">メンバー一覧</p>
-      <nav>
-        <a href="index.html">ホーム</a>
+  <a class="skip" href="#main">本文へスキップ</a>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="/index.html">
+        <span class="brand-name">河合勝彦研究室</span>
+        <span class="brand-sub">名古屋市立大学 KKLab</span>
+      </a>
+      <nav class="site-nav" aria-label="メインナビゲーション">
+        <a href="/index.html">研究室紹介</a>
+        <a href="/members.html" class="current" aria-current="page">メンバー紹介</a>
+        <a href="/works.html">研究成果</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section id="faculty">
-      <h2>教員</h2>
-      <div class="member-list">
-        <ul>
-          <li><a href="https://github.com/faculty-member1" target="_blank" rel="noopener noreferrer">教員名</a></li>
-        </ul>
+  <main id="main" class="container">
+    <h1 class="page-title">メンバー紹介</h1>
+
+    <section id="faculty" aria-labelledby="faculty-h">
+      <h2 id="faculty-h">教員</h2>
+      <div class="card faculty">
+        <p class="member-name">河合 勝彦 <span class="badge">教授</span></p>
+        <p class="member-affil">名古屋市立大学</p>
+        <p class="member-links">
+          <a href="https://github.com/katzkawai" target="_blank" rel="noopener noreferrer">GitHub</a> ・
+          <a href="https://github.com/orgs/kkawailab/repositories" target="_blank" rel="noopener noreferrer">研究室 GitHub</a> ・
+          <a href="https://www.kklab.info" target="_blank" rel="noopener noreferrer">公式サイト</a>
+        </p>
       </div>
     </section>
 
-    <section id="doctoral">
-      <h2>博士課程</h2>
-      <div class="member-list">
-        <ul>
-          <li><a href="https://github.com/doctoral-1" target="_blank" rel="noopener noreferrer">学生名1</a></li>
-          <li><a href="https://github.com/doctoral-2" target="_blank" rel="noopener noreferrer">学生名2</a></li>
-        </ul>
-      </div>
+    <!--
+      ============================================================
+      学生メンバーの追加方法
+      ------------------------------------------------------------
+      各学年セクションの <ul class="member-list"> 内にある
+      <li class="placeholder"> 行を、実際のメンバー情報に置き換えます。
+
+      1. <li class="placeholder">…</li> をコピーして新しい <li> を作る。
+      2. class="placeholder" を外し、氏名テキストを実名に置き換える。
+      3. GitHub がある場合は次のように GitHub リンクを添える：
+         例）
+         <li>山田 太郎 —
+           <a href="https://github.com/yamada" target="_blank" rel="noopener noreferrer">GitHub</a>
+         </li>
+      4. 一言メッセージや研究テーマを加えたい場合は、氏名の後に
+         <span class="muted">（研究テーマ：◯◯）</span> のように添える。
+
+      ※ 学生が在籍していない学年のセクションは、丸ごと削除して構いません。
+      ============================================================
+    -->
+
+    <section id="doctoral" aria-labelledby="doctoral-h">
+      <h2 id="doctoral-h">博士課程</h2>
+      <ul class="member-list">
+        <li class="placeholder">（準備中 — メンバー情報は後日掲載します）</li>
+      </ul>
     </section>
 
-    <section id="master2">
-      <h2>修士2年</h2>
-      <div class="member-list">
-        <ul>
-          <li><a href="https://github.com/master2-1" target="_blank" rel="noopener noreferrer">学生名1</a></li>
-          <li><a href="https://github.com/master2-2" target="_blank" rel="noopener noreferrer">学生名2</a></li>
-        </ul>
-      </div>
+    <section id="master2" aria-labelledby="master2-h">
+      <h2 id="master2-h">修士2年</h2>
+      <ul class="member-list">
+        <li class="placeholder">（準備中 — メンバー情報は後日掲載します）</li>
+      </ul>
     </section>
 
-    <section id="master1">
-      <h2>修士1年</h2>
-      <div class="member-list">
-        <ul>
-          <li><a href="https://github.com/master1-1" target="_blank" rel="noopener noreferrer">学生名1</a></li>
-          <li><a href="https://github.com/master1-2" target="_blank" rel="noopener noreferrer">学生名2</a></li>
-        </ul>
-      </div>
+    <section id="master1" aria-labelledby="master1-h">
+      <h2 id="master1-h">修士1年</h2>
+      <ul class="member-list">
+        <li class="placeholder">（準備中 — メンバー情報は後日掲載します）</li>
+      </ul>
     </section>
 
-    <section id="year4">
-      <h2>4年</h2>
-      <div class="member-list">
-        <ul>
-          <li><a href="https://github.com/student4-1" target="_blank" rel="noopener noreferrer">学生名1</a></li>
-          <li><a href="https://github.com/student4-2" target="_blank" rel="noopener noreferrer">学生名2</a></li>
-          <li><a href="https://github.com/student4-3" target="_blank" rel="noopener noreferrer">学生名3</a></li>
-        </ul>
-      </div>
+    <section id="year4" aria-labelledby="year4-h">
+      <h2 id="year4-h">学部4年</h2>
+      <ul class="member-list">
+        <li class="placeholder">（準備中 — メンバー情報は後日掲載します）</li>
+      </ul>
     </section>
 
-    <section id="year3">
-      <h2>3年</h2>
-      <div class="member-list">
-        <ul>
-          <li><a href="https://github.com/student3-1" target="_blank" rel="noopener noreferrer">学生名1</a></li>
-          <li><a href="https://github.com/student3-2" target="_blank" rel="noopener noreferrer">学生名2</a></li>
-          <li><a href="https://github.com/student3-3" target="_blank" rel="noopener noreferrer">学生名3</a></li>
-        </ul>
-      </div>
+    <section id="year3" aria-labelledby="year3-h">
+      <h2 id="year3-h">学部3年</h2>
+      <ul class="member-list">
+        <li class="placeholder">（準備中 — メンバー情報は後日掲載します）</li>
+      </ul>
     </section>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2025 KKLab ゼミ</p>
+      <nav class="footer-links" aria-label="関連リンク">
+        <a href="https://www.kklab.info" target="_blank" rel="noopener noreferrer">研究室公式サイト</a>
+        <a href="https://ideamarkets.info/" target="_blank" rel="noopener noreferrer">研究ブログ</a>
+        <a href="https://github.com/orgs/kkawailab/repositories" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
+      <p class="copyright">&copy; 2026 名古屋市立大学 河合勝彦研究室 (KKLab)</p>
     </div>
   </footer>
 </body>
