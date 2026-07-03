@@ -469,6 +469,47 @@ li {
   color: var(--color-muted);
 }
 
+/* ---------- 研究アプローチ: 探究のサイクル ---------- */
+.cycle-list {
+  list-style: none;
+  counter-reset: cycle;
+  margin: var(--space-3) 0;
+  padding: 0;
+}
+.cycle-list > li {
+  position: relative;
+  counter-increment: cycle;
+  padding: var(--space-2) 0 var(--space-2) 3rem;
+  border-bottom: 1px solid var(--color-line);
+}
+.cycle-list > li:last-child {
+  border-bottom: none;
+}
+.cycle-list > li::before {
+  content: counter(cycle);
+  position: absolute;
+  left: 0;
+  top: var(--space-2);
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+  background: var(--color-accent);
+  border-radius: 50%;
+}
+
+/* h3 内の補助ラベル（研究アプローチのカード） */
+.card h3 .muted {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
 /* ---------- 注記 ---------- */
 .note {
   background: var(--color-note-bg);
